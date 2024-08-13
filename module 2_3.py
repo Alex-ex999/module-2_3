@@ -3,4 +3,9 @@ number = 0
 while number < len(my_list):
     if my_list[number] > 0:
         print(my_list[number])
+    elif my_list[number] == 0:
+        number += 1
+        continue
+    else:
+        break
     number += 1
